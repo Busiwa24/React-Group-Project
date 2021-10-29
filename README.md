@@ -2,7 +2,7 @@
 
 # Space Traveler's Hub
 
-> **Space Traveler's Hub** is an API based website that displays three different pages. The `Rockets` page, where you can see, reserve a rocket, and cancel reservation. The `Mission` page, where you can see, join the missions, and leave the missions. And the `My Profile` page, where you can visualize the missions and rockets you have booked.
+This is an API based website that displays three different pages. The `Rockets` page, where you can see, reserve a rocket, and cancel reservation. The `Mission` page, where you can see, join the missions, and leave the missions. The `My Profile` page is where you can visualize the missions and rockets you have booked.
 
 # Getting Started
 
