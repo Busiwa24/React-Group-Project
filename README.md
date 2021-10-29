@@ -8,7 +8,7 @@
 
 To get a local copy up and running follow these simple steps.
 
-- You can clone this repo by typing `git clone https://github.com/rpire/space-traveler-s-hub.git` on your terminal.
+- You can clone this repo by typing `git@github.com:Busiwa24/React-Group-Project.git` on your terminal.
 
 - Type `cd space-traveler-s-hub` to access the project on the terminal.
   
@@ -16,44 +16,55 @@ To get a local copy up and running follow these simple steps.
 
 - Run `npm start` from your editor's terminal to view the project in your browser.
 
-# This project was built with:
+# Prerequisites
+-Github
+-VS Code or editor 
+-React Redux project 
 
-JavaScript
+# Install
+-Github and Github desktop
+-VS code or other editor 
+-Github Action for linter checks
 
-React-Redux
+## Built with
 
-# Version Control System
+- JavaScript/React
+- React Router
+- JSX
+- CSS
 
-GIT
+## Setup
 
-# 👤 Authors
+- Get the link of the repository:  https://github.com/Busiwa24/React-Group-Project.git
+- Clone it as https://github.com/Busiwa24/React-Group-Project.git on a Terminal
 
-👤 **Daniel Maina**
+## Usage
 
-- GitHub: [@danmainah](https://github.com/danmainah)
+- Run `npm install` on a Terminal to install the modules
+- Run `yarn start` on a Terminal to start the server 
+- Open [http://localhost:3000/bookstore](http://localhost:3000/bookstore) to view it in the browser.
 
-- Twitter: [@Danmainah](https://twitter.com/dan_mainah)
+## Author
 
-- LinkedIn: [@Daniel-Maina](www.linkedin.com/in/daniel-maina-315a38191)
+👤 **Busiwa Liuma**
 
-👤 **Rubén D. Pire**
+-GitHub: (https://github.com/Busiwa24) 
+-Twitter: (https://twitter.com/busiwaliuma) 
+-LinkedIn: (https://www.linkedin.com/in/busiwa-liuma-28385b80/>)
 
-- GitHub: [Rubén D. Pire](https://github.com/rpire)
-
-- Twitter [@RubenPire7](https://twitter.com/RubenPire7)
-
-- LinkedIn: [Rubén D. Pire](https://www.linkedin.com/in/rub%C3%A9n-dar%C3%ADo-pire-l%C3%B3pez-507111189/)
-
-# 🤝 Contributing
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to raise an issue on https://github.com/Busiwa24/Bookstore-React-Redux.git
 
-Feel free to check the [issues page](https://github.com/rpire/Poke-dex/issues).
-
-# Show your support
+## Show your support
 
 Give a ⭐️ if you like this project!
 
-# 📝 License
+## Acknowledgments
 
-This project is [MIT](LICENSE) licensed.
+- Microverse guidelines
+- React and React Router
+- Stack Overflow
+
+
