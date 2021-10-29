@@ -1,9 +1,19 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getMissions } from '../redux/missions/missions';
 import Mission from '../components/Mission';
 
 const Missions = () => {
-  const state = useSelector((state) => state.missions);
+  const missions = useSelector((state) => state.missions);
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    if (missions.length === 0) {
+      dispatch(getMissions())
+    }
+  })
+
   return (
     <div className="container">
       <h1>Missions</h1>
@@ -17,9 +27,11 @@ const Missions = () => {
           </tr>
         </thead>
         <tbody>
-          {state.map((mission) => (
-            <Mission key={mission.mission_id} mission={mission} />
-          ))}
+          {
+            missions.map((mission) => (
+              <Mission key={mission.mission_id} mission={mission} />
+            ))
+          }
         </tbody>
       </table>
     </div>
