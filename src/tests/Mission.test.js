@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import store from '../redux/configureStore';
 import Mission from '../components/Mission';
 
+
 test('Check if Mission is rendering correctly', () => {
   const body = document.createElement('tbody');
   const mission = {

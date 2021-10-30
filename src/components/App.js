@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import Rockets from '../pages/Rockets';
 import Missions from '../pages/Missions';
 import MyProfile from '../pages/MyProfile';

@@ -4,12 +4,12 @@ import RocketButton from './RocketButton';
 import RocketBadge from './RocketBadge';
 
 const Rocket = ({
-  rocket_name,
-  rocket_id,
+  Rocket_Name,
+  Rocket_Id,
   description,
-  flickr_images,
+  Flickr_Images,
   reserved,
-}) => {
+}) =>  {
   return (
     <li>
       <div className="card mb-3">
@@ -19,13 +19,13 @@ const Rocket = ({
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h3 className="card-title">{rocket_name}</h3>
+              <h3 className="card-title">{Rocket_Name}</h3>
               <p className="card-text">
                 <RocketBadge reserved={reserved} />
                 {description}
               </p>
               <RocketButton
-                id={rocket_id}
+                id={Rocket_Id}
                 reserved={reserved}
               />
             </div>
@@ -40,7 +40,7 @@ Rocket.propTypes = {
   rocket_name: PropTypes.string,
   rocket_id: PropTypes.string,
   description: PropTypes.string,
-  flickr_images: PropTypes.array,
+  flickr_images: PropTypes.string,
   reserved: PropTypes.bool,
 };
 
