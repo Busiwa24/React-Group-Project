@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMissions } from '../redux/missions/missions';
+
 import Mission from '../components/Mission';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     if (missions.length === 0) {
-      dispatch(getMissions())
+      dispatch(getMissions());
     }
-  })
+  });
 
   return (
     <div className="container">

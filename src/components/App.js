@@ -1,21 +1,16 @@
-import { Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 import Rockets from '../pages/Rockets';
 import Missions from '../pages/Missions';
 import MyProfile from '../pages/MyProfile';
 import NotFound from '../pages/NotFound';
 import Navbar from './Navbar';
-// import { getRockets } from '../redux/rockets/rockets';
-// import { getMissions } from '../redux/missions/missions';
 
-const App = () => {
-  // const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   dispatch(getRockets());
-  //   dispatch(getMissions());
-  // }, [dispatch]);
-
-  return (
+const App = () => (
+  <Router>
     <>
       <Navbar />
       <Switch>
@@ -33,7 +28,7 @@ const App = () => {
         </Route>
       </Switch>
     </>
-  );
-};
+  </Router>
+);
 
 export default App;

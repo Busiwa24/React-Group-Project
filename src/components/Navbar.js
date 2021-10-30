@@ -7,7 +7,7 @@ const links = [
     id: 1,
     path: '/',
     text: 'Rockets',
-  }
+  },
   {
     id: 2,
     path: '/missions',

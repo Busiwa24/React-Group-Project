@@ -10,10 +10,9 @@ const Mission = (props) => {
       description,
       mission_id: id,
       reserved,
-    };
-  
+    },
+
   } = props;
-  ;
 
   return (
     <tr key={id}>

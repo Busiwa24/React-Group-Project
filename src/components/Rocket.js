@@ -4,28 +4,30 @@ import RocketButton from './RocketButton';
 import RocketBadge from './RocketBadge';
 
 const Rocket = ({
-  Rocket_Name,
-  Rocket_Id,
+  rocketName,
+  rocketId,
   description,
-  Flickr_Images,
+  flickrImages,
   reserved,
-}) =>  {
+}) => {
+  console.log(flickrImages);
+
   return (
     <li>
       <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-3">
-            <img src={flickr_images[0]} className="img-fluid rounded-start" alt="..." />
+            <img src={flickrImages[1]} className="img-fluid rounded-start" alt="..." />
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h3 className="card-title">{Rocket_Name}</h3>
+              <h3 className="card-title">{rocketName}</h3>
               <p className="card-text">
                 <RocketBadge reserved={reserved} />
                 {description}
               </p>
               <RocketButton
-                id={Rocket_Id}
+                id={rocketId}
                 reserved={reserved}
               />
             </div>
@@ -37,18 +39,18 @@ const Rocket = ({
 };
 
 Rocket.propTypes = {
-  rocket_name: PropTypes.string,
-  rocket_id: PropTypes.string,
+  rocketName: PropTypes.string,
+  rocketId: PropTypes.string,
   description: PropTypes.string,
-  flickr_images: PropTypes.string,
+  flickrImages: PropTypes.instanceOf(Array),
   reserved: PropTypes.bool,
 };
 
 Rocket.defaultProps = {
-  rocket_name: PropTypes.string,
-  rocket_id: PropTypes.string,
+  rocketName: PropTypes.string,
+  rocketId: PropTypes.string,
   description: PropTypes.string,
-  flickr_images: PropTypes.array,
+  flickrImages: PropTypes.array,
   reserved: PropTypes.bool,
 };
 

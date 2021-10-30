@@ -10,12 +10,12 @@ const Rockets = () => {
 
   useEffect(() => {
     if (rockets.length === 0) {
-      dispatch(getRockets())
+      dispatch(getRockets());
     }
-  }, [])
+  }, []);
 
   console.log(
-    rockets
+    rockets,
   );
 
   return (
@@ -26,10 +26,10 @@ const Rockets = () => {
           rockets.map((rocket) => (
             <Rocket
               key={rocket.rocket_id}
-              rocket_name={rocket.rocket_name}
-              rocket_id={rocket.rocket_id}
+              rocketName={rocket.rocket_name}
+              rocketId={rocket.rocket_id}
               description={rocket.description}
-              flickr_images={rocket.flickr_images}
+              flickrImages={rocket.flickr_images}
               reserved={rocket.reserved}
             />
           ))
